@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500;600&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* font-family: 'Mynerve', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Shantell Sans', cursive;
+ */
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef8354;
+  color: #ffffff;
+  padding-inline: 15px;
+}
+
+#quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: #2d3142;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Karla", sans-serif;
+  user-select: none;
+}
+
+.quote-text {
+  font-size: 2.75rem;
+  color: #ffffff;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.icon-quote {
+  font-size: 3.5rem;
+}
+
+.quote-author {
+  margin-block: 15px;
+  color: #bfc0c0;
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0.5rem 1.8rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background: #4f5d75;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+button:hover {
+  /* filter: brightness(110%); */
+  background-color: #2d3142;
+
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(23, 23, 23, 0.65);
+}
+
+.btn-twitter:hover {
+  color: #38a1f3;
+}
+
+.btn-newQuote:hover {
+  color: #ef8354;
+}
+
+.icon-twt {
+  font-size: 1.5rem;
+}
+
+.lds-dual-ring {
+  display: none;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #2d3142;
+  border-color: #2d3142 transparent #2d3142 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

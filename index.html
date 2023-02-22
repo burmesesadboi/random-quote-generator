@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Quote Generator</title>
+  </head>
+  <body>
+    <div class="lds-dual-ring" id="loader"></div>
+    <main class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fa-solid fa-quote-left icon-quote"></i>
+        <span id="quote"> </span>
+        <!-- Author -->
+        <i class="fa-solid fa-quote-right icon-quote"></i>
+        <div class="quote-author">
+          <div id="author"></div>
+        </div>
+        <!-- Button -->
+        <div class="button-container">
+          <button class="btn-twitter" id="btn-twitter">
+            <i class="fa-brands fa-twitter icon-twt"></i>
+          </button>
+          <button class="btn-newQuote" id="btn-newQuote">new quote</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
