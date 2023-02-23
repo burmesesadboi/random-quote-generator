@@ -2,7 +2,7 @@ const quoteContainerTag = document.getElementsByClassName("quote-container")[0];
 const quoteTag = document.querySelector("#quote");
 const authorTag = document.querySelector("#author");
 const btnNewQuoteTag = document.getElementById("btn-newQuote");
-const btnTwitterTag = document.querySelector("btn-twitter");
+const btnTwitterTag = document.querySelector(".btn-twitter");
 const loaderTag = document.querySelector("#loader");
 
 const loadingFunc = () => {
@@ -40,5 +40,14 @@ const rearrangeFetchedData = (data) => {
     return showDataFunc();
   }, 3000);
 };
+
+const tweetTheQuote = function () {
+  console.log("click");
+  window.open(
+    `https://twitter.com/intent/tweet?text=${quoteTag.textContent} - ${authorTag.textContent}}`
+  );
+};
+
+btnTwitterTag.addEventListener("click", tweetTheQuote);
 
 btnNewQuoteTag.addEventListener("click", generateQuotesFromAPI);
